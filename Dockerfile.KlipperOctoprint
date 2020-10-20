@@ -4,7 +4,14 @@ FROM ubuntu:18.04
 EXPOSE 8080
 
 RUN apt-get update && \
-    apt-get install -y git python-virtualenv python-dev build-essential ffmpeg sudo
+    apt-get install -y git python-virtualenv python-dev build-essential ffmpeg curl sudo
+    
+# install docker cli
+ENV DOCKERVERSION=19.03.13
+RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKERVERSION}.tgz \
+  && tar xzvf docker-${DOCKERVERSION}.tgz --strip 1 \
+                 -C /usr/local/bin docker/docker \
+  && rm docker-${DOCKERVERSION}.tgz
 
 EXPOSE 5000
 
