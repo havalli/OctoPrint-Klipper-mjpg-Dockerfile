@@ -60,7 +60,8 @@ https://github.com/OctoPrint/OctoPrint-MQTT/archive/master.zip \
 https://github.com/fraschetti/Octoslack/archive/master.zip \
 https://github.com/MoonshineSG/OctoPrint-MultiColors/archive/master.zip \
 https://github.com/OllisGit/OctoPrint-PrintJobHistory/releases/latest/download/master.zip \
-https://github.com/Kragrathea/OctoPrint-PrettyGCode/archive/master.zip
+https://github.com/Kragrathea/OctoPrint-PrettyGCode/archive/master.zip \
+https://github.com/OllisGit/OctoPrint-FilamentManager/releases/latest/download/master.zip
 
 
 VOLUME /home/octoprint/.octoprint
