@@ -63,3 +63,9 @@ avrdude -p atmega1284p -c arduino -b 57600 -P /dev/ttyUSB0 -U out/klipper.elf.he
 # Now exit and restart the container
 ```
 
+# Restarting Octoprint
+
+To restart the container from octoprint, set this line as restart command:
+```
+docker restart $HOSTNAME
+```
