@@ -62,7 +62,8 @@ https://github.com/MoonshineSG/OctoPrint-MultiColors/archive/master.zip \
 https://github.com/OllisGit/OctoPrint-PrintJobHistory/releases/latest/download/master.zip \
 https://github.com/Kragrathea/OctoPrint-PrettyGCode/archive/master.zip \
 https://github.com/OllisGit/OctoPrint-FilamentManager/releases/latest/download/master.zip \
-https://github.com/fabianonline/OctoPrint-Telegram/archive/master.zip
+https://github.com/fabianonline/OctoPrint-Telegram/archive/master.zip \
+https://github.com/BillyBlaze/OctoPrint-FullScreen/archive/master.zip
 
 
 VOLUME /home/octoprint/.octoprint
