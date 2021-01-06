@@ -3,20 +3,12 @@ EXPOSE 8080
 
 
 # Override this for your location
-ENV TZ=Australia/Brisbane
+ENV TZ=Europe/Berlin
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -y cmake libjpeg8-dev g++ unzip wget git ffmpeg \
+    apt-get install -y git build-essential \
         python2 virtualenv python3-dev curl
-
-RUN cd /tmp/ && \
-    wget https://github.com/jacksonliam/mjpg-streamer/archive/master.zip && \
-    unzip master
-
-RUN cd /tmp/mjpg-streamer-master/mjpg-streamer-experimental/ && \
-    make && \
-    make install
     
 # install docker cli
 ENV DOCKERVERSION=19.03.13
@@ -92,8 +84,6 @@ RUN git clone https://github.com/KevinOConnor/klipper
 RUN sed -i 's/python-virtualenv //' ./klipper/scripts/install-ubuntu-18.04.sh
 
 RUN ./klipper/scripts/install-ubuntu-18.04.sh
-
-RUN cp klipper/config/printer-anet-a8-2017.cfg /home/octoprint/printer.cfg
 
 USER root
 
