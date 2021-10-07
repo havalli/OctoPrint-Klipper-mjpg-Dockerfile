@@ -80,7 +80,7 @@ USER octoprint
 
 WORKDIR /home/octoprint
 
-RUN git clone https://github.com/KevinOConnor/klipper
+RUN git clone https://github.com/KevinOConnor/klipper -b v0.10.0
 
 # Update the install script for Ubuntu 20
 RUN sed -i 's/python-virtualenv //' ./klipper/scripts/install-ubuntu-18.04.sh
