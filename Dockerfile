@@ -82,7 +82,6 @@ RUN git clone https://github.com/KevinOConnor/klipper -b v0.11.0
 
 # Update the install script for Ubuntu 20
 COPY install-ubuntu-22.04.sh ./klipper/scripts/install-ubuntu-22.04.sh
-RUN chmod a+x ./klipper/scripts/install-ubuntu-22.04.sh
 RUN sed -i 's/python-virtualenv //' ./klipper/scripts/install-ubuntu-22.04.sh
 
 RUN ./klipper/scripts/install-ubuntu-22.04.sh
