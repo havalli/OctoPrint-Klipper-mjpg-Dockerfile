@@ -8,7 +8,7 @@ ENV TZ=Europe/Berlin
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y git build-essential \
-        virtualenv python3-dev curl ffmpeg
+        virtualenv python3-dev curl ffmpeg python-is-python3
     
 # install docker cli
 ENV DOCKERVERSION=23.0.6
