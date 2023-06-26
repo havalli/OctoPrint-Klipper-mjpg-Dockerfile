@@ -35,7 +35,7 @@ USER octoprint
 RUN mkdir /home/octoprint/.octoprint
 
 #Install Octoprint
-RUN git clone --branch $tag https://github.com/foosel/OctoPrint.git /opt/octoprint \
+RUN git clone --branch $tag https://github.com/OctoPrint/OctoPrint.git /opt/octoprint \
   && virtualenv venv \
     && ./venv/bin/pip install .
 
@@ -44,12 +44,9 @@ https://github.com/FormerLurker/Octolapse/archive/master.zip \
 https://github.com/AlexVerrico/Octoprint-Display-ETA/archive/master.zip \
 https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip \
 https://github.com/marian42/octoprint-preheat/archive/master.zip \
-https://github.com/jneilliii/OctoPrint-TasmotaMQTT/archive/master.zip \
 https://github.com/mikedmor/OctoPrint_MultiCam/archive/master.zip \
-https://github.com/AliceGrey/OctoprintKlipperPlugin/archive/master.zip \
+https://github.com/thelastWallE/OctoprintKlipperPlugin/archive/master.zip \
 https://github.com/jneilliii/OctoPrint-TabOrder/archive/master.zip \
-https://github.com/OctoPrint/OctoPrint-MQTT/archive/master.zip \
-https://github.com/fraschetti/Octoslack/archive/master.zip \
 https://github.com/MoonshineSG/OctoPrint-MultiColors/archive/master.zip \
 https://github.com/OllisGit/OctoPrint-PrintJobHistory/releases/latest/download/master.zip \
 https://github.com/Kragrathea/OctoPrint-PrettyGCode/archive/master.zip \
@@ -57,6 +54,7 @@ https://github.com/OllisGit/OctoPrint-FilamentManager/releases/latest/download/m
 https://github.com/fabianonline/OctoPrint-Telegram/archive/master.zip \
 https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/archive/master.zip \
 https://github.com/tpmullan/OctoPrint-DetailedProgress/archive/master.zip \
+https://github.com/derekantrican/OctoPrint-Webhooks/archive/master.zip \
 https://github.com/BillyBlaze/OctoPrint-FullScreen/archive/master.zip
 
 
@@ -80,7 +78,7 @@ USER octoprint
 
 WORKDIR /home/octoprint
 
-RUN git clone https://github.com/KevinOConnor/klipper -b v0.10.0
+RUN git clone https://github.com/KevinOConnor/klipper -b v0.11.0
 
 # Update the install script for Ubuntu 20
 RUN sed -i 's/python-virtualenv //' ./klipper/scripts/install-ubuntu-18.04.sh
