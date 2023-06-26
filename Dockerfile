@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 EXPOSE 8080
 
 
@@ -11,7 +11,7 @@ RUN apt-get update && \
         python2 virtualenv python3-dev curl ffmpeg
     
 # install docker cli
-ENV DOCKERVERSION=19.03.13
+ENV DOCKERVERSION=23.0.6
 RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKERVERSION}.tgz \
   && tar xzvf docker-${DOCKERVERSION}.tgz --strip 1 \
                  -C /usr/local/bin docker/docker \
@@ -81,9 +81,9 @@ WORKDIR /home/octoprint
 RUN git clone https://github.com/KevinOConnor/klipper -b v0.11.0
 
 # Update the install script for Ubuntu 20
-RUN sed -i 's/python-virtualenv //' ./klipper/scripts/install-ubuntu-18.04.sh
+RUN sed -i 's/python-virtualenv //' ./klipper/scripts/install-ubuntu-22.04.sh
 
-RUN ./klipper/scripts/install-ubuntu-18.04.sh
+RUN ./klipper/scripts/install-ubuntu-22.04.sh
 
 USER root
 
