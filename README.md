@@ -58,7 +58,7 @@ cd /home/octoprint/klipper
 make menuconfig
 make
 pkill -f klippy; pkill -f klipper
-avrdude -p atmega1284p -c arduino -b 57600 -P /dev/ttyUSB0 -U out/klipper.elf.hex
+avrdude -p atmega1284p -c arduino -b 115200 -P /dev/ttyUSB0 -U out/klipper.elf.hex
 
 # Now exit and restart the container
 ```
