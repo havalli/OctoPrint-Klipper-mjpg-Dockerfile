@@ -44,12 +44,12 @@ https://github.com/FormerLurker/Octolapse/archive/master.zip \
 https://github.com/AlexVerrico/Octoprint-Display-ETA/archive/master.zip \
 https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip \
 https://github.com/marian42/octoprint-preheat/archive/master.zip \
-https://github.com/mikedmor/OctoPrint_MultiCam/archive/master.zip \
+# https://github.com/mikedmor/OctoPrint_MultiCam/archive/master.zip \
 https://github.com/thelastWallE/OctoprintKlipperPlugin/archive/master.zip \
 https://github.com/jneilliii/OctoPrint-TabOrder/archive/master.zip \
-https://github.com/MoonshineSG/OctoPrint-MultiColors/archive/master.zip \
+# https://github.com/MoonshineSG/OctoPrint-MultiColors/archive/master.zip \
 https://github.com/OllisGit/OctoPrint-PrintJobHistory/releases/latest/download/master.zip \
-https://github.com/Kragrathea/OctoPrint-PrettyGCode/archive/master.zip \
+# https://github.com/Kragrathea/OctoPrint-PrettyGCode/archive/master.zip \
 https://github.com/OllisGit/OctoPrint-FilamentManager/releases/latest/download/master.zip \
 https://github.com/fabianonline/OctoPrint-Telegram/archive/master.zip \
 https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/archive/master.zip \
