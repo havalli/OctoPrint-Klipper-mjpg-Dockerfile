@@ -19,7 +19,7 @@ RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-${
 
 EXPOSE 5000
 
-ARG tag=master
+ARG tag=fix/webrtc
 
 WORKDIR /opt/octoprint
 
