@@ -35,7 +35,7 @@ USER octoprint
 RUN mkdir /home/octoprint/.octoprint
 
 #Install Octoprint
-RUN git clone --branch $tag https://github.com/OctoPrint/OctoPrint.git /opt/octoprint \
+RUN git clone --branch $tag https://github.com/havalli/OctoPrint.git /opt/octoprint \
   && virtualenv venv \
     && ./venv/bin/pip install .
 
